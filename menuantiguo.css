@@ -1,0 +1,215 @@
+
+/*Estilos para el encabezado*/
+.header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;left: 0;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.container .btn-menu, .logo{
+    float: left;
+    line-height:100px;
+}
+.container .btn-menu label{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+.logo h1{
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 10px;
+}
+.container .menu{
+    float: right;
+    line-height: 100px;
+}
+.container .menu a{
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    margin-right: 5px;
+}
+.container .menu a:hover{
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 5px;
+}
+/*Fin de Estilos para el encabezado*/
+
+/*Menù lateral*/
+
+
+.cont-menu{
+    width: 260px;
+    max-width: 280px;
+    background: #ffffff;
+    height: 1300px;
+    position: fixed;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 11pt;
+    font-style: normal;
+    border-right: 5px solid #ffffff;
+    border-left: 5px solid #ffffff;
+    margin-top: 0%;
+    letter-spacing: 0px;
+    
+    
+}
+
+.letra1{
+    font-family: serif;
+    font-size: 14pt;
+    color: #000000;
+    font-weight: 550;
+    display: flex;
+    line-height: 0.35cm;
+}
+
+
+
+.cont-menu nav a{
+    text-decoration: none;
+    padding: 20px;
+    color: #000000;
+    background-color: #ffffff;
+    border-left: 5px solid transparent;
+    display: flex;
+    border-right: 5px solid #000000;
+    border-left: 5px solid #000000;
+    
+    
+}
+.cont-menu nav a:hover{
+    
+    background: #303030;
+    color: #ffffff;
+    display: flex;
+    width: 215px;
+    border-right: 5px solid #ffffff; 
+    border-left: 5px solid #ffffff;
+    
+}
+
+.cont-menu nav a:hover .letra1{
+    color: #ffffff;
+}
+
+.cont-menu label{
+    position: hidden;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    
+  
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #ebebeb;
+}
+/*Fin de Menù lateral*/
+
+
+
+/*menu antiguo 2*/
+
+/*Menù lateral*/
+#btn-menu{
+    display: none;
+
+}
+.container-menu{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+
+}
+.cont-menu{
+    max-width: 300px;
+    width: 250px;
+    background: #141414;
+    height: 100vh;
+    position: fixed;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+
+}
+
+
+
+.cont-menu nav{
+    transform: translateY(15%);
+    margin-top: 4cm;
+}
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+    color: #000000;
+    background-color: #ffffff;
+    border-left: 5px solid transparent;
+    display: flex;
+    border-right: 5px solid #000000;
+    border-left: 5px solid #000000;
+}
+.cont-menu nav a:hover{
+    border-left: 5px solid #c7c7c7;
+    background: #f5f5f5;
+}
+.cont-menu label{  /*boton lateral ☰ con el menu abierto*/
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    margin-right: 0.5cm;
+    margin-top: 0.5cm;
+    cursor: pointer;
+    font-size: 22pt;
+    color: rgb(255, 255, 255);
+    
+}
+/*Fin de Menù lateral*/
+
+
+/*menu antiguo 2 parte HTML*/
+
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+<div class="cont-menu">
+    <nav>
+        <a href="#join">Top</a>
+        <a href="#AboutTheProject">About The Project</a>
+        <a href="#History">History</a>
+        <a href="#Gallery">Gallery</a>
+        <a href="#FAQs">FAQs</a>
+        <a href="#AboutMe">About Me</a>
+    </nav>
+    <label for="btn-menu">☰</label>
+</div>
+</div>
